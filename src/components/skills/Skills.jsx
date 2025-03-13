@@ -10,6 +10,9 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiSqlite,
+  SiMysql,
+  SiGithub,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
@@ -33,9 +36,7 @@ const Skills = ({ darkMode }) => {
             <p
               data-aos="fade-up"
               className=" text-gray-700 font-medium w-[100%]"
-            >
-              Here are my skills.
-            </p>
+            ></p>
             {/* left box */}
             <div
               data-aos="zoom-in"
@@ -73,6 +74,18 @@ const Skills = ({ darkMode }) => {
                 white={"black"}
                 skill={"MongoDB"}
               />
+              <SkillBox
+                logo={<SiMysql />}
+                black={"white"}
+                white={"black"}
+                skill={"SQL"}
+              />
+              <SkillBox
+                logo={<SiGithub />}
+                black={"white"}
+                white={"black"}
+                skill={"Git"}
+              />
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
@@ -83,22 +96,25 @@ const Skills = ({ darkMode }) => {
               />
               <SkillBox
                 className=""
-                logo={
-                  <GrCode/>
-                }
+                logo={<GrCode />}
                 black={"black"}
                 white={"white"}
                 skill={"C++"}
               />
-              {/* <SkillBox
+              <SkillBox
                 className=""
-                logo={
-                  <SiNextdotjs className=" text-white bg-black rounded-full h-fit border-white overflow-hidden" />
-                }
+                logo={<GrCode />}
                 black={"black"}
                 white={"white"}
-                skill={"Next Js"}
-              /> */}
+                skill={"Java"}
+              />
+              <SkillBox
+                className=""
+                logo={<GrCode />}
+                black={"black"}
+                white={"white"}
+                skill={"Python"}
+              />
             </div>
           </div>
         </div>
