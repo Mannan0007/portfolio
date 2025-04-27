@@ -3,7 +3,15 @@ import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
 
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
+import { FaJava } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+// import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaNode } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
 
+import { DiMongodb } from "react-icons/di";
 
 import {
   SiJavascript,
@@ -14,7 +22,7 @@ import {
   SiMysql,
   SiGithub,
 } from "react-icons/si";
-import { GrCode } from "react-icons/gr";
+import { GrCode, GrJava } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
@@ -42,8 +50,8 @@ const Skills = ({ darkMode }) => {
               data-aos="zoom-in"
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
-              <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-                <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
+              <div className="flex flex-row flex-wrap gap-6 w-3/4 my-5 md:w-[90%]">
+                {/* <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
                 <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
                 <ProgressBar
                   logo={<SiJavascript />}
@@ -55,52 +63,27 @@ const Skills = ({ darkMode }) => {
                   logo={<SiTailwindcss />}
                   name={"Tailwind CSS"}
                   value={80}
-                />
+                /> */}
+
+                <SkillBox logo={<FaReact />} skill={"React"} />
+                <SkillBox logo={<DiMongodb />} skill={"MongoDB"} />
+                <SkillBox logo={<SiJavascript />} skill={"JavaScript"} />
+                <SkillBox logo={<FaNode />} skill={"Node js"} />
+                <SkillBox logo={<SiExpress />} skill={'express'} />
+                <SkillBox logo={<SiGithub />} skill={'Git'} />
+                <SkillBox logo={<FaJava/>} skill={'Java'}/>
               </div>
             </div>
           </div>
           {/* right box */}
-          <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
+          {/* <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
-              <SkillBox
-                logo={<IoLogoNodejs />}
-                black={"white"}
-                white={"black"}
-                skill={"Node Js"}
-              />
-              <SkillBox
-                logo={<SiMongodb />}
-                black={"white"}
-                white={"black"}
-                skill={"MongoDB"}
-              />
-              <SkillBox
-                logo={<SiMysql />}
-                black={"white"}
-                white={"black"}
-                skill={"SQL"}
-              />
-              <SkillBox
-                logo={<SiGithub />}
-                black={"white"}
-                white={"black"}
-                skill={"Git"}
-              />
+          
+           
             </div>
             <div className="last2 flex flex-col gap-10">
-              <SkillBox
-                logo={<SiExpress />}
-                black={"black"}
-                white={"white"}
-                skill={"Express Js"}
-              />
-              <SkillBox
-                className=""
-                logo={<GrCode />}
-                black={"black"}
-                white={"white"}
-                skill={"C++"}
-              />
+          
+            
               <SkillBox
                 className=""
                 logo={<GrCode />}
@@ -108,15 +91,8 @@ const Skills = ({ darkMode }) => {
                 white={"white"}
                 skill={"Java"}
               />
-              <SkillBox
-                className=""
-                logo={<GrCode />}
-                black={"black"}
-                white={"white"}
-                skill={"Python"}
-              />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* icons */}
